@@ -1,16 +1,78 @@
 ---
+import { Icon } from "astro-icon/components"
 
+import Base from "@layouts/Base.astro"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Base>
+  <div class="flex h-screen w-screen flex-col items-center justify-center px-8">
+    <div class="mx-auto mb-16 max-w-2xl text-center">
+      <Icon name="logo" width={279} height={70} />
+    </div>
+    <div class="w-full divide-y">
+      <section class="grid divide-x md:grid-cols-3">
+        <a
+          href="/shutters"
+          class="hover:bg-dark-green group flex flex-col items-center justify-center px-8 py-24 transition-all duration-200 hover:text-white">
+          <div class="bg-dark-green mb-6 rounded-lg p-4 text-white">
+            <Icon name="lucide:blinds" size={24} />
+          </div>
+          <h3 class="text-center text-3xl font-bold -tracking-wide">
+            Security Shutters
+          </h3>
+        </a>
+        <a
+          href="/fog"
+          class="hover:bg-steel-blue group flex flex-col items-center justify-center px-8 py-24 transition-all duration-200 hover:text-white">
+          <div class="bg-steel-blue mb-6 rounded-lg p-4 text-white">
+            <Icon name="lucide:alarm-smoke" size={24} />
+          </div>
+          <h3 class="text-center text-3xl font-bold -tracking-wide">
+            SafetyFog
+          </h3>
+        </a>
+        <a
+          href=""
+          class="hover:bg-royal-blue group flex flex-col items-center justify-center px-8 py-24 transition-all duration-200 hover:text-white">
+          <div class="bg-royal-blue rounded-lg p-4 text-white">
+            <Icon name="lucide:picture-in-picture-2" size={24} />
+          </div>
+          <h3 class="text-center text-3xl font-semibold -tracking-wide">
+            Security Glass
+          </h3>
+        </a>
+      </section>
+      <section class="grid divide-x md:grid-cols-3">
+        <a
+          href=""
+          class="hover:bg-dark-green group flex flex-col items-center justify-center px-8 py-24 transition-all duration-200 hover:text-white">
+          <div class="bg-dark-green mb-6 rounded-lg p-4 text-white">
+            <Icon name="lucide:blinds" size={24} />
+          </div>
+          <h3 class="text-center text-3xl font-bold -tracking-wide">
+            Solar Shades
+          </h3>
+        </a>
+        <a
+          href=""
+          class="hover:bg-dark-green group flex flex-col items-center justify-center px-8 py-24 transition-all duration-200 hover:text-white">
+          <div class="bg-dark-green mb-6 rounded-lg p-4 text-white">
+            <Icon name="lucide:blinds" size={24} />
+          </div>
+          <h3 class="text-center text-3xl font-bold -tracking-wide">Awning</h3>
+        </a>
+        <a
+          href=""
+          class="hover:bg-dark-green group flex flex-col items-center justify-center px-8 py-24 transition-all duration-200 hover:text-white">
+          <div class="bg-dark-green mb-6 rounded-lg p-4 text-white">
+            <Icon name="lucide:blinds" size={24} />
+          </div>
+          <h3 class="text-center text-3xl font-bold -tracking-wide">
+            Security Shutters
+          </h3>
+        </a>
+      </section>
+    </div>
+    <h1>Astro</h1>
+  </div>
+</Base>
