@@ -6,6 +6,8 @@ import tailwind from "@astrojs/tailwind"
 import db from "@astrojs/db"
 import icon from "astro-icon"
 
+import netlify from "@astrojs/netlify";
+
 // https://astro.build/config
 export default defineConfig({
   integrations: [
@@ -13,5 +15,8 @@ export default defineConfig({
       applyBaseStyles: false
     }),
     icon()
-  ]
+  ],
+
+  output: "server",
+  adapter: netlify()
 })

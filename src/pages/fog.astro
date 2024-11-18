@@ -1,0 +1,22 @@
+---
+import { Icon } from "astro-icon/components"
+
+import Base from "@layouts/Base.astro"
+---
+
+<Base>
+  <div class="flex h-screen w-screen flex-col items-center justify-center px-8">
+    <div class="mx-auto mb-16 max-w-2xl text-center">
+      <Icon name="logo" width={279} height={70} />
+    </div>
+    <div class="w-full divide-y">
+      <video
+        loop
+        playsinline
+        controls
+        class="mx-auto aspect-video w-full max-w-screen-lg">
+        <source src="/videos/fog.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+</Base>
