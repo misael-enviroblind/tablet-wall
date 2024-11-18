@@ -11,7 +11,7 @@ export default {
         "dark-green": "rgb(var(--dark-green) / <alpha-value>)",
         "steel-blue": "rgb(var(--steel-blue) / <alpha-value>)",
         "royal-blue": "rgb(var(--royal-blue) / <alpha-value>)",
-        oelo: "rgb(var(--oelo), <alpha-value>)"
+        oelo: "rgb(var(--oelo)/ <alpha-value>)"
       },
       fontFamily: {
         sans: ["Roboto", ...defaultTheme.fontFamily.sans]
